@@ -1,0 +1,34 @@
+.gradle
+**/build/
+!src/**/build/
+
+# Local configuration
+local.properties
+.kotlin/
+jdk17/
+
+# IntelliJ/Android Studio
+.idea/
+*.iml
+*.iws
+
+# Gradle GUI and cache
+gradle-app.setting
+.gradletasknamecache
+
+# Wrapper
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Eclipse
+.project
+.classpath
+**/Workspace*
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Captures and Logs
+captures/
+*.log

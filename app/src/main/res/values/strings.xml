@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">XRadioStream</string>
+    <string name="stream_title">XRadio Live Stream</string>
+    <string name="stream_artist">Live Stream Audio</string>
+
+    <string name="status_buffering">Buffering stream&#8230;</string>
+    <string name="status_playing">Playing Live</string>
+    <string name="status_paused">Paused</string>
+    <string name="status_ended">Stream Ended</string>
+    <string name="status_ready">Ready to Play</string>
+    <string name="status_disconnected">Disconnected</string>
+
+    <string name="perm_notification_needed">Notification permission is needed to show lockscreen controls.</string>
+</resources>
