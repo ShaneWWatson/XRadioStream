@@ -1,21 +1,26 @@
 [versions]
-androidGradlePlugin = "9.2.1"
-androidxCore = "1.18.0"
-androidxLifecycle = "2.10.0"
+androidGradlePlugin = "9.3.0-rc01"
+androidxCore = "1.19.0"
+androidxLifecycle = "2.11.0"
 androidxActivity = "1.13.0"
-androidxComposeBom = "2026.05.01"
+androidxComposeBom = "2026.06.00"
 androidxTest = "1.7.0"
 androidxTestExt = "1.3.0"
 androidxTestRunner = "1.7.0"
 androidxTestEspresso = "3.7.0"
 coroutines = "1.11.0"
 junit = "4.13.2"
-kotlin = "2.3.21"
-nav3Core = "1.1.2"
-lifecycleViewmodelNav3 = "2.10.0"
+kotlin = "2.4.0"
+materialIconsCore = "1.7.8"
+nav3Core = "1.1.3"
+lifecycleViewmodelNav3 = "2.11.0"
 media3 = "1.10.1"
+androidxSecurity = "1.1.0"
+datastore = "1.2.1"
 
 [libraries]
+material-icons-core = { module = "androidx.compose.material:material-icons-core", version.ref = "materialIconsCore" }
+material-icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "materialIconsCore" }
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidxActivity" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
@@ -39,6 +44,8 @@ androidx-navigation3-ui = { module = "androidx.navigation3:navigation3-ui", vers
 androidx-lifecycle-viewmodel-navigation3 = { module = "androidx.lifecycle:lifecycle-viewmodel-navigation3", version.ref = "lifecycleViewmodelNav3" }
 androidx-media3-exoplayer = { module = "androidx.media3:media3-exoplayer", version.ref = "media3" }
 androidx-media3-session = { module = "androidx.media3:media3-session", version.ref = "media3" }
+androidx-security-crypto = { module = "androidx.security:security-crypto", version.ref = "androidxSecurity" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }

@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.xradiostream.app"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
     }
@@ -62,8 +62,9 @@ dependencies {
   implementation(libs.androidx.compose.ui)
   implementation(libs.androidx.compose.ui.tooling.preview)
   implementation(libs.androidx.compose.material3)
-  implementation("androidx.compose.material:material-icons-core:1.7.8")
-  implementation("androidx.compose.material:material-icons-extended:1.7.8")
+    implementation(libs.material.icons.core)
+    implementation(libs.material.icons.extended)
+  
   // Tooling
   debugImplementation(libs.androidx.compose.ui.tooling)
   // Instrumented tests
@@ -88,4 +89,8 @@ dependencies {
   // Media3 for Background Audio Playback
   implementation(libs.androidx.media3.exoplayer)
   implementation(libs.androidx.media3.session)
+
+    // Security & Persistence
+    implementation(libs.androidx.security.crypto)
+    implementation(libs.androidx.datastore.preferences)
 }

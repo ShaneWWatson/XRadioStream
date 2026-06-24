@@ -7,7 +7,11 @@ XRadioStream is a lightweight Android application designed for high-quality audi
 - **High-Quality Streaming**: Uses Jetpack Media3 and ExoPlayer for robust audio playback.
 - **Background Playback**: Continuous streaming even when the app is in the background or the screen is off, managed via a Foreground Service.
 - **Media Controls**: Integrated with the Android System Media Controls and Lock Screen for easy access to Play/Pause functionality.
-- **Custom Configuration**: Easily configure your radio server details (Host, Port, and Protocol).
+- **Custom Configuration**: Easily configure your radio server details (Host, Port, Mount Point, and
+  Protocol).
+- **Metadata Support**: Displays real-time Artist and Song information from the stream.
+- **Security-First**: Uses EncryptedSharedPreferences for configuration storage and enforces host
+  validation.
 - **Modern UI**: Built entirely with Jetpack Compose and Material 3 for a sleek, responsive user interface.
 - **Network Awareness**: Designed to handle network security and connectivity configurations effectively.
 
@@ -38,9 +42,10 @@ XRadioStream is a lightweight Android application designed for high-quality audi
    Import the project and wait for Gradle sync to complete.
 3. **Configure the Stream**:
    Upon first launch, the app will prompt you for your radio server's configuration:
-   - **Host**: The IP or domain of your stream server.
+    - **Host**: The IP or domain of your stream server (validated for security).
    - **Port**: The port number (e.g., 8000).
-   - **Protocol**: Choose between HTTP or HTTPS.
+    - **Mount Point**: The specific path for your stream (e.g., /stream).
+    - **Protocol**: Choose between HTTP or HTTPS (with security warnings for insecure connections).
 4. **Play**: Once configured, tap the Play button on the main screen to start the live stream.
 
 ## Permissions

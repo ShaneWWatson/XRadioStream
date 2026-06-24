@@ -11,4 +11,5 @@
     <string name="status_disconnected">Disconnected</string>
 
     <string name="perm_notification_needed">Notification permission is needed to show lockscreen controls.</string>
+    <string name="perm_local_network_needed">Local network permission is needed to connect to local stream servers.</string>
 </resources>
