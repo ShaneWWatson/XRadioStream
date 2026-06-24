@@ -1,36 +1,44 @@
 # XRadioStream
 
-XRadioStream is a lightweight Android application designed for high-quality audio streaming from custom radio servers. Built with modern Android technologies, it provides a seamless background listening experience.
+XRadioStream is a lightweight Android application designed for high-quality audio streaming from
+custom radio servers. Built with modern Android technologies, it provides a seamless background
+listening experience and is fully optimized for the latest Android 17 (API 37) features.
 
 ## Features
 
 - **High-Quality Streaming**: Uses Jetpack Media3 and ExoPlayer for robust audio playback.
 - **Background Playback**: Continuous streaming even when the app is in the background or the screen is off, managed via a Foreground Service.
-- **Media Controls**: Integrated with the Android System Media Controls and Lock Screen for easy access to Play/Pause functionality.
+- **Media Controls**: Integrated with the Android System Media Controls and Lock Screen for easy
+  access to playback functionality.
 - **Custom Configuration**: Easily configure your radio server details (Host, Port, Mount Point, and
   Protocol).
-- **Metadata Support**: Displays real-time Artist and Song information from the stream.
-- **Security-First**: Uses EncryptedSharedPreferences for configuration storage and enforces host
+- **Metadata Support**: Displays real-time Artist and Song information (ICY metadata) from the
+  stream.
+- **Modern Security**: Uses Jetpack DataStore for robust configuration storage and enforces host
   validation.
+- **Android 17 Optimized**: Fully compliant with API 37 security standards, including Localhost and
+  Local Network protections.
 - **Modern UI**: Built entirely with Jetpack Compose and Material 3 for a sleek, responsive user interface.
-- **Network Awareness**: Designed to handle network security and connectivity configurations effectively.
 
 ## Architecture & Technologies
 
-- **Language**: 100% Kotlin
+- **Language**: 100% Kotlin (Version 2.4.0)
+- **Target SDK**: Android 17 (API 37)
 - **UI Framework**: Jetpack Compose (Material 3)
 - **Media Engine**: [Jetpack Media3](https://developer.android.com/guide/topics/media/media3) (ExoPlayer & MediaSession)
 - **Navigation**: Navigation3 for Compose
+- **Storage
+  **: [Jetpack DataStore](https://developer.android.com/topic/libraries/architecture/datastore) (
+  Preferences)
 - **Service**: `MediaSessionService` for managing background audio sessions.
-- **Theme**: Dynamic coloring and Material Design 3 guidelines.
 
 ## Getting Started
 
 ### Prerequisites
 
-- Android Studio Ladybug (or newer)
+- Android Studio (Latest Preview or Stable)
 - Android SDK 24+ (Min SDK)
-- Target SDK 35+ (Optimized for Android 15)
+- Target SDK 37 (Android 17)
 
 ### Setup
 
@@ -54,6 +62,9 @@ The app requires the following permissions to function correctly:
 - `INTERNET`: To stream audio from remote servers.
 - `FOREGROUND_SERVICE` & `FOREGROUND_SERVICE_MEDIA_PLAYBACK`: To keep the audio playing in the background.
 - `POST_NOTIFICATIONS`: To show playback controls in the notification drawer (Android 13+).
+- `USE_LOOPBACK_INTERFACE`: Required for connecting to local services on `127.0.0.1` (Android 17+).
+- `ACCESS_LOCAL_NETWORK`: Required for connecting to servers on your Local Area Network (Android
+  17+).
 
 ## License
 
